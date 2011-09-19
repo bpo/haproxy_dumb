@@ -21,6 +21,9 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{quite a dumb wrapper for haproxy}
   gem.email = "bpo@somnambulance.net"
   gem.authors = ["Brian P O'Rourke"]
+
+  gem.extensions = FileList["ext/haproxy*/extconf.rb"]
+
   # dependencies defined in Gemfile
 end
 Jeweler::RubygemsDotOrgTasks.new
